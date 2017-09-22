@@ -1,0 +1,7 @@
+Py65816 - A 65816 emulator in Python
+Scot W. Stevenson <scot.stevenson@gmail.com>
+First version: 22. Sep 2017
+This version: 22. Sep 2017
+
+GENERAL IDEA
+
