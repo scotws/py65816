@@ -1,0 +1,21 @@
+# Sample hardware configuration file for Py65816
+# Scot W. Stevenson <scot.stevenson@gmail.com>
+# First version: 23. Sep 2017
+# This version: 23. Sep 2017
+
+# Empty lines and lines that start with '#' (like this one) are ignored
+
+# --- SYSTEM I/O ADDRESSES ---
+
+GETCHAR 00:f000
+GETCHAR_BLOCK 00:f001
+PUTCHAR 00:f002
+
+
+# --- SYSTEM MEMORY ---
+
+# Use the following format:
+# <type> <start> <end> [<romfile>]
+
+ram 00:0000 00:7fff
+rom 00:8000 00:ffff ./roms/test.bin
