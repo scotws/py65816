@@ -31,3 +31,21 @@ class Memblock:
             f = True
 
         return f
+
+    def fetch08(self, addr):
+        """Get one byte from memory
+        """
+        i = addr - self.start
+        b = self.data[i]
+
+        return b
+
+    def store08(self, addr, b):
+        """Store one byte at the given address. Does nothing if memory
+        is of the type ROM
+        """
+        if type == 'rom':
+            return
+
+        i = addr - self.start
+        self.data[i] = b
